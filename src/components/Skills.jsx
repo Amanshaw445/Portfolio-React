@@ -43,7 +43,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section className="bg-gray-900 text-white py-10 px-4" id="skills">
+    <section className="bg-black text-white py-10 px-4" id="skills">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10">Skills</h2>
         <div className="space-y-12">
