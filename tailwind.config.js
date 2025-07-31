@@ -6,16 +6,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
-// tailwind.config.js
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
     extend: {
+      scrollBehavior: {
+        smooth: 'smooth', // Enables scroll-smooth
+      },
       keyframes: {
         gradientShift: {
           '0%, 100%': { backgroundPosition: '0% 50%' },
@@ -29,4 +23,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
