@@ -11,3 +11,22 @@ export default {
   plugins: [],
 }
 
+// tailwind.config.js
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      keyframes: {
+        gradientShift: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+      },
+      animation: {
+        gradientSlow: 'gradientShift 10s ease infinite',
+        gradientFast: 'gradientShift 2s ease infinite',
+      },
+    },
+  },
+  plugins: [],
+};
