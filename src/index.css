@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Swiper Pagination Styles */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: white;      /* Inactive bullet - white */
+  opacity: 1;                   /* Fully visible */
+  margin: 0 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3B82F6;    /* Active bullet - blue (Tailwind's blue-500) */
+  width: 14px;
+  height: 14px;
+}

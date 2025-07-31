@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import HeroImage from '../assets/hero-image.png';
 import ResumeModal from './ResumeModal';
 
-
-
 const Hero = () => {
   const [showResume, setShowResume] = useState(false);
 
   return (
-    <section id="home" className="bg-black text-white text-center py-20 relative">
+    <section id="home" className="bg-black text-white text-center py-20 relative scroll-smooth">
       <div className="container mx-auto px-4">
         <img
           src={HeroImage}
@@ -36,7 +34,7 @@ const Hero = () => {
         <div className="mt-8">
           <button
             onClick={() => setShowResume(true)}
-            className="animate-bounce bg-gradient-to-r from-pink-500 to-yellow-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110"
+            className="animate-pulse bg-gradient-to-r from-pink-500 to-yellow-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110"
           >
             Resume
           </button>

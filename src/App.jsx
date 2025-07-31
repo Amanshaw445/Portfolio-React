@@ -1,4 +1,5 @@
 import './App.css'
+import './index.css';
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -9,8 +10,7 @@ import Skills from './components/Skills'
 import SectionToggle from './components/SectionToggle'
 
 function App() {
-
- const scrollToNextSection = () => {
+  const scrollToNextSection = () => {
     window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
   };
 
@@ -18,9 +18,8 @@ function App() {
     window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
   };
 
-
   return (
-    <div>
+    <div className="scroll-smooth">
       <Navbar />
       <Hero />
       <About />
@@ -33,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
