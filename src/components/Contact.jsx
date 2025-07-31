@@ -88,13 +88,12 @@ const Contact = () => {
                 />
               </div>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row flex-wrap">
-  <button className="bg-gradient-to-r from-green-400 via-blue-400 to-purple-500 text-white 
-    bg-[length:200%_200%] bg-[position:0%_50%]
-    animate-gradientSlow hover:animate-gradientFast
-    transform transition-transform duration-300 hover:scale-105
-    px-8 py-2 rounded-full w-full sm:w-auto shadow-lg">
-    Send
-  </button>
+<button className="bg-gradient-to-r from-green-400 via-blue-400 to-purple-500 text-white 
+  transition-transform duration-300 hover:scale-105
+  px-8 py-2 rounded-full w-full sm:w-auto shadow-lg">
+  Send
+</button>
+
 </div>
 
             </form>
