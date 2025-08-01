@@ -1,5 +1,5 @@
 import React from "react";
-import ChatWindow from "./ChatWindow";
+import botu from "../assets/botuProfile.png"; 
 
 const Navbar = () => {
   return (
@@ -20,11 +20,9 @@ const Navbar = () => {
             <a href="#project" className="hover:text-gray-300">Projects</a>
             <a href="#contact" className="hover:text-gray-300">Contact</a>
           </div>
-
-          {/* Right: Custom Connect Me Button */}
-          <div className="hidden md:block">
-            <ChatWindow />
-          </div>
+           <button
+            className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110">connect
+          </button>
         </div>
       </nav>
     </>
