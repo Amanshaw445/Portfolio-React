@@ -18,18 +18,32 @@ function App() {
     window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
   };
 
-  return (
-    <div className="scroll-smooth bg-slate-600" >
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-      <SectionToggle onScrollUp={scrollToPrevSection} onScrollDown={scrollToNextSection} />
-    </div>
-  )
+const toggleBot = () => {
+  const iframe = document.querySelector("iframe[title='Botpress']");
+  if (!iframe) return;
+
+  const isHidden = iframe.style.display === "none" || iframe.style.visibility === "hidden";
+
+  window.botpressWebChat.sendEvent({
+    type: isHidden ? "show" : "hide"
+  });
+};
+
+
+return (
+  <div className="scroll-smooth min-h-screen bg-gradient-to-r from-black via-green-700 via-blue-900 to-gray-900 bg-[length:400%_400%] bg-[position:0%_50%] animate-gradientSlow text-white">
+
+
+    <Navbar />
+    <Hero />
+    <About />
+    <Skills />
+    <Projects />
+    <Contact />
+    <Footer />
+    <SectionToggle onScrollUp={scrollToPrevSection} onScrollDown={scrollToNextSection} />
+  </div>
+)
 }
 
 export default App;
