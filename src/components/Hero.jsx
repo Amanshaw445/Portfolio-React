@@ -6,7 +6,7 @@ const Hero = () => {
   const [showResume, setShowResume] = useState(false);
 
   return (
-    <section id="home" className="bg-black text-white text-center py-20 relative scroll-smooth">
+    <section id="home" className=" text-white text-center pt-32 pb-10  relative scroll-smooth">
       <div className="container mx-auto px-4">
         <img
           src={HeroImage}
