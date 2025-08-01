@@ -46,7 +46,7 @@ const Projects = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="bg-black text-white py-20 relative" id="project">
+    <div className=" text-white py-20 relative" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
 
