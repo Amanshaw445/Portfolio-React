@@ -1,30 +1,98 @@
-import React from "react";
-import botu from "../assets/botuProfile.png"; 
+import React, { useEffect, useRef, useState } from "react";
+import ResumeModal from './ResumeModal';
+
+const navLinks = ["home", "about", "skills", "project", "contact"];
 
 const Navbar = () => {
+  const [showResume, setShowResume] = useState(false);
+  const [active, setActive] = useState("home");
+  const underlineRef = useRef(null);
+  const linkRefs = useRef({});
+
+  // Track active section using IntersectionObserver
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-50% 0px -50% 0px" }
+    );
+
+    navLinks.forEach(id => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Animate underline to active link & handle resize
+  useEffect(() => {
+    const el = linkRefs.current[active];
+    const underline = underlineRef.current;
+    if (el && underline) {
+      const updateUnderline = () => {
+        underline.style.left = `${el.offsetLeft}px`;
+        underline.style.width = `${el.offsetWidth}px`;
+      };
+
+      updateUnderline();
+      window.addEventListener("resize", updateUnderline);
+      return () => window.removeEventListener("resize", updateUnderline);
+    }
+  }, [active]);
+
   return (
     <>
-      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] bg-black/30 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-lg scroll-smooth">
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-4">
-          
+      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] bg-black/30 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-lg scroll-smooth z-10">
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-4 relative">
+
           {/* Left: Name */}
           <div className="text-2xl font-bold hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             Aman Shaw
           </div>
 
-          {/* Center: Links */}
-          <div className="flex flex-wrap justify-center gap-6 text-sm sm:text-base">
-            <a href="#home" className="hover:text-gray-300">Home</a>
-            <a href="#about" className="hover:text-gray-300">About Me</a>
-            <a href="#skills" className="hover:text-gray-300">Skills</a>
-            <a href="#project" className="hover:text-gray-300">Projects</a>
-            <a href="#contact" className="hover:text-gray-300">Contact</a>
+          {/* Center: Nav Links */}
+          <div className="relative flex flex-wrap justify-center gap-6 text-sm sm:text-base">
+            {navLinks.map((id) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                ref={(el) => (linkRefs.current[id] = el)}
+                className="relative pb-1 hover:text-gray-300 transition-colors 
+                after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 
+                after:bg-gradient-to-r after:from-green-400 after:to-blue-500 
+                after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {id.charAt(0).toUpperCase() + id.slice(1)}
+              </a>
+            ))}
+
+            {/* Sliding Underline for Active */}
+            <span
+              ref={underlineRef}
+              className="absolute bottom-0 h-0.5 bg-gradient-to-r from-green-400 to-blue-500 transition-all duration-500 ease-in-out rounded-full"
+            />
           </div>
-           <button
-            className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110">connect
-          </button>
+
+          {/* Right: Resume Button */}
+         {/* Resume Button (hidden on mobile) */}
+<button
+  onClick={() => setShowResume(true)}
+  className="hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110"
+>
+  Resume
+</button>
+
         </div>
       </nav>
+
+      {/* Resume Modal */}
+      {showResume && <ResumeModal onClose={() => setShowResume(false)} />}
     </>
   );
 };

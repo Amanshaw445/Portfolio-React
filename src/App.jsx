@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import SectionToggle from './components/SectionToggle'
+import CursorLight from "./components/CursorLight";
 
 function App() {
   const scrollToNextSection = () => {
@@ -31,7 +32,7 @@ const toggleBot = () => {
 
 
 return (
-  <div className="scroll-smooth min-h-screen bg-gradient-to-r from-black via-green-700 via-blue-900 to-gray-900 bg-[length:400%_400%] bg-[position:0%_50%] animate-gradientSlow text-white">
+  <div className="scroll-smooth min-h-screen bg-gradient-to-r from-black via-gray-800 to-gray-900 bg-[length:400%_400%] bg-[position:0%_50%] animate-gradientSlow text-white">
 
 
     <Navbar />
@@ -42,6 +43,7 @@ return (
     <Contact />
     <Footer />
     <SectionToggle onScrollUp={scrollToPrevSection} onScrollDown={scrollToNextSection} />
+    <CursorLight />
   </div>
 )
 }

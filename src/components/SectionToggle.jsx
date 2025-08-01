@@ -16,7 +16,7 @@ const SectionToggle = ({ onScrollUp, onScrollDown }) => {
         className="backdrop-blur-sm bg-white/10 border border-white/20 p-3 rounded-full 
                    hover:scale-110 transition transform shadow-md"
       >
-        <FaChevronDown className="text-yellow-400 text-xl" />
+        <FaChevronDown className="text-green-400 text-xl" />
       </button>
     </div>
   );
