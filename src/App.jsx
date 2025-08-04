@@ -9,6 +9,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import SectionToggle from './components/SectionToggle'
 import CursorLight from "./components/CursorLight";
+import GitHubStats from "./components/GitHubStats";
 
 function App() {
   const scrollToNextSection = () => {
@@ -40,6 +41,7 @@ return (
     <About />
     <Skills />
     <Projects />
+    <GitHubStats/>
     <Contact />
     <Footer />
     <SectionToggle onScrollUp={scrollToPrevSection} onScrollDown={scrollToNextSection} />

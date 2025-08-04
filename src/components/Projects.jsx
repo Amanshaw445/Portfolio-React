@@ -16,28 +16,28 @@ const projects = [
     name: "Upcoming",
     technologies: "🌐",
     image: commingsoon,
-    github: " ",
+    github: "./ProjectError.html",
   },
   {
     id: 2,
     name: "Upcoming",
     technologies: "🌐",
     image: commingsoon,
-    github: " ",
+    github: "./ProjectError.html",
   },
   {
     id: 3,
     name: "Upcoming",
     technologies: "🌐",
     image: commingsoon,
-    github: " ",
+    github: "./ProjectError.html",
   },
   {
     id: 4,
-    name: "Upcoming",
+    name: "Upcomin4g",
     technologies: "🌐",
     image: commingsoon,
-    github: " ",
+    github: "./ProjectError.html",
   },
 ];
 

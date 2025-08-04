@@ -25,10 +25,10 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Aman Shaw. All rights reserved.
           </p>
           <div className="flex space-x-4 my-4 md:my-0">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="./Error404.html" className="text-gray-400 hover:text-white">
               <FaFacebook />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="./Error404.html" className="text-gray-400 hover:text-white">
               <FaTwitter />
             </a>
             <a
