@@ -11,19 +11,21 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import commingsoon from "../assets/commingsoon.jpg";
 
 const projects = [
-  {
+ {
     id: 1,
-    name: "Upcoming",
-    technologies: "🌐",
-    image: commingsoon,
-    github: "./ProjectError.html",
+    name: "Personal Portfolio",
+    technologies: "React, Tailwind CSS, JavaScript",
+    image: "/portfolio.png",
+    github: "https://github.com/Amanshaw445/Portfolio-React",
+    live: "https://amanshaw.vercel.app",
   },
   {
     id: 2,
-    name: "Upcoming",
-    technologies: "🌐",
-    image: commingsoon,
-    github: "./ProjectError.html",
+    name: "Weather App",
+    technologies: "HTML, CSS, JavaScript",
+    image: "/weatherApp.png",
+    github: "https://github.com/Amanshaw445/WeatherApp",
+    live: "https://climetx.vercel.app",
   },
   {
     id: 3,
@@ -32,14 +34,8 @@ const projects = [
     image: commingsoon,
     github: "./ProjectError.html",
   },
-  {
-    id: 4,
-    name: "Upcomin4g",
-    technologies: "🌐",
-    image: commingsoon,
-    github: "./ProjectError.html",
-  },
 ];
+
 
 const Projects = () => {
   const prevRef = useRef(null);
@@ -115,14 +111,22 @@ const Projects = () => {
                 />
                 <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
                 <p className="text-gray-400 mb-4">{project.technologies}</p>
-                <a
-                  href={project.github}
-                  className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
+              <a
+              href={project.github}
+              className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              GitHub
+              </a>
+              <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-4 py-2 rounded-full"
+              >
+              Live
+              </a>
               </div>
             </SwiperSlide>
           ))}
