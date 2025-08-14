@@ -1,95 +1,40 @@
-# Personal Portfolio Website using React + Tailwind CSS
+# ✅ README.md – Personal Portfolio Website
 
-## Overview
+A sleek, fully-responsive portfolio built with **React + Tailwind CSS** to showcase my skills, projects, and professional journey as a Frontend Developer & Computer Science student.
 
-This is a modern, responsive personal portfolio website built with React and Tailwind CSS. The portfolio showcases my skills, projects, and experience as a Computer Science student and Frontend Developer.
+---
 
-## Features
+## 🚀 Key Highlights
+- **Responsive Design** – Perfect on desktop, tablet, and mobile  
+- **Modern UI/UX** – Gradient animations, glass-morphism, smooth scrolling  
+- **Interactive Carousel** – Swiper-powered project showcase  
+- **Contact Form** – EmailJS integration for direct outreach  
+- **Fast & SEO-friendly** – Vite build, optimized assets  
 
-- **Responsive Design**: Fully responsive layout that works on all device sizes
-- **Smooth Scrolling Navigation**: One-page navigation with smooth scrolling between sections
-- **Interactive Components**: Animated components using Framer Motion and Swiper carousel
-- **Contact Form**: Functional contact form powered by EmailJS
-- **Modern UI**: Gradient animations, glass morphism effects, and contemporary design elements
-- **Section Toggle**: Easy navigation between sections with up/down buttons
+---
 
-#### Technologies Used:-
+## 🛠️ Tech Stack
+**Frontend:** React, Tailwind CSS, Framer Motion  
+**Tools:** Vite, ESLint, PostCSS, Swiper, EmailJS  
 
-### Frontend
-- React.js
-- Tailwind CSS
-- Framer Motion (for animations)
-- Swiper (for carousel)
-- React Icons
-- EmailJS (for contact form)
+---
 
-### Development Tools
-- Vite (build tool)
-- ESLint (code linting)
-- PostCSS
-- Autoprefixer
-
-
-## Project Structure
-
+## 📂 Structure
 ```
 Portfolio-React/
-├── public/
-│   ├── icon.png
-│   ├── resume.pdf
-│   └── vite.svg
 ├── src/
-│   ├── assets/
-│   │   ├── aboutme-image.png
-│   │   ├── hero-image.png
-│   │   └── ...
-│   ├── components/
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Skills.jsx
-│   │   └── ...
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-└── vite.config.js
+│   ├── components/   # Hero, About, Skills, Projects, Contact
+│   └── assets/       # Images, icons
+├── public/           # Static files & resume
+└── README.md
 ```
 
-#### Sections :-
+---
 
-### Hero Section
+## 🌐 Live Demo
+[amanshaw.vercel.app](https://amanshaw.vercel.app)
 
-### About Section
+---
 
-### Skills Section
-
-### Projects Section
-
-### Contact Section
-
--------------------------------------------------------------
-#### Deployment
-
-The portfolio has ben deployed to:
-- Vercel
-
-#### Contact Information
-
-- **Name**: Aman Shaw
-- **Email**: amanshaw871@gmail.com
-- **Location**: West Bengal, India
-- **LinkedIn**: [linkedin.com/in/amanshaw445](https://linkedin.com/in/amanshaw445)
-- **GitHub**: [github.com/Amanshaw445](https://github.com/Amanshaw445)
-
-
-#### License
-
-© 2024 Aman Shaw. All rights reserved.
-
+## 📄 License
+© 2024 Aman Shaw – MIT License
