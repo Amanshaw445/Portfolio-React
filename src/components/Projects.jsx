@@ -50,9 +50,26 @@ const projects = [
     image: "/bubbleGame.png",
     github: "https://github.com/Amanshaw445/bubble-game",
     live: "https://mybubblegame455.netlify.app/",
-  },
+  }, 
   {
     id: 6,
+    name: "Real Time Feedback",
+    technologies: "HTML, CSS, js",
+    image: "/feedbackApp.png",
+    github: "https://github.com/Amanshaw445/realtimeReview",
+    live: "https://realtimereview.netlify.app/",
+  },
+  {
+    id: 7,
+    name: "my repair",
+    technologies: "HTML, CSS, js",
+    image: "/repairApp.png",
+    github: "https://github.com/Amanshaw445/electronicsrepair",
+    live: "https://repairforme.netlify.app/",
+  },
+
+  {
+    id: 8,
     name: "fabfit",
     technologies: "HTML, CSS",
     image: "/fabfitApp.png",
@@ -60,8 +77,8 @@ const projects = [
     live: "https://fabfitshopping.netlify.app/",
   },
   {
-    id: 7,
-    name: "Upcoming",
+    id: 9,
+    name: "Upcoming🧑‍💻",
     technologies: "🌐",
     image: commingsoon,
     github: "./ProjectError.html",
