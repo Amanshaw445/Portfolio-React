@@ -8,8 +8,10 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import SectionToggle from './components/SectionToggle'
-import CursorLight from "./components/CursorLight";
-import GitHubStats from "./components/GitHubStats";
+import CursorLight from './components/CursorLight'
+import GitHubStats from './components/GitHubStats'
+import ThemeToggle from './components/ThemeToggle';
+
 
 function App() {
   const scrollToNextSection = () => {
@@ -32,22 +34,29 @@ const toggleBot = () => {
 };
 
 
-return (
-  <div className="scroll-smooth min-h-screen bg-gradient-to-r from-black via-gray-800 to-gray-900 bg-[length:400%_400%] bg-[position:0%_50%] animate-gradientSlow text-white">
+  return (
+    <div className="relative scroll-smooth min-h-screen 
+    bg-white text-black 
+    dark:bg-gradient-to-r dark:from-black dark:via-gray-800 dark:to-gray-900 
+    dark:text-white 
+    bg-[length:400%_400%] bg-[position:0%_50%] animate-gradientSlow">
 
 
-    <Navbar />
-    <Hero />
-    <About />
-    <Skills />
-    <Projects />
-    <GitHubStats/>
-    <Contact />
-    <Footer />
-    <SectionToggle onScrollUp={scrollToPrevSection} onScrollDown={scrollToNextSection} />
-    <CursorLight />
-  </div>
-)
+        <div className="absolute top-4 right-4 z-50 ">
+          <ThemeToggle />
+        </div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <GitHubStats/>
+      <Contact />
+      <Footer />
+      <SectionToggle onScrollUp={scrollToPrevSection} onScrollDown={scrollToNextSection} />
+      <CursorLight />
+    </div>
+  )
 }
 
 export default App;

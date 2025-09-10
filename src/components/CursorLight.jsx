@@ -11,7 +11,12 @@ const CursorLight = () => {
 
   return (
     <div
-      className="pointer-events-none fixed top-0 left-0 z-11 w-48 h-48 bg-green-400 rounded-full opacity-80 blur-[100px] transition-transform duration-100 "
+      className="
+        pointer-events-none fixed top-0 left-0 
+        w-48 h-48 rounded-full blur-[100px] transition-transform duration-100
+        hidden dark:block    /* only show in dark mode */
+        bg-gradient-to-r from-green-400 to-blue-500 opacity-70
+      "
       style={{
         transform: `translate(${pos.x - 96}px, ${pos.y - 96}px)`,
       }}

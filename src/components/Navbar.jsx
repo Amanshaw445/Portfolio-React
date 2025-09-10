@@ -48,7 +48,15 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] bg-black/30 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-lg scroll-smooth z-10">
+<nav className="
+  fixed top-4 left-1/2 transform -translate-x-1/2 z-50 
+  w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] 
+  bg-white/30 text-black 
+  dark:bg-black/30 dark:text-white 
+  backdrop-blur-md px-4 py-3 
+  rounded-2xl shadow-lg scroll-smooth
+">
+
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-4 relative">
 
           {/* Left: Name */}
