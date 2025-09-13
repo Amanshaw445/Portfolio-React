@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import HeroImage from '../assets/hero-image.jpg';
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import ResumeModal from './ResumeModal';
 
 const Hero = () => {
@@ -45,7 +45,7 @@ const Hero = () => {
 
     <div className="w-full flex justify-center items-center mt-10">
       <div className="flex items-center gap-6 mt-6">
-        <a href="mailto:amanshaw871@gmail.com">
+       <a href="mailto:amanshaw871@gmail.com">
           <FaEnvelope className="text-red-500 text-2xl hover:scale-110 transition-transform" />
         </a>
         <a href="https://github.com/Amanshaw445" target="_blank" rel="noopener noreferrer">
@@ -54,6 +54,10 @@ const Hero = () => {
         <a href="https://linkedin.com/in/amanshaw445" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-blue-700 dark:text-blue-400 text-2xl hover:scale-110 transition-transform" />
         </a>
+        <a href="https://twitter.com/amanshaw817" target="_blank" rel="noopener noreferrer">
+          <FaTwitter className="text-blue-500 text-2xl hover:scale-110 transition-transform" />
+        </a>
+
       </div>
     </div>
 

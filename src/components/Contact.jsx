@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaPaperPlane,
+  FaTwitter,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
@@ -99,6 +100,17 @@ const Contact = () => {
                 className="hover:underline"
               >
                 linkedin.com/in/amanshaw445
+              </a>
+            </div>
+            <div className="mb-4">
+              <FaTwitter className="inline-block text-blue-500 mr-2" />
+              <a
+                href="https://twitter.com/amanshaw817"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                twitter.com/amanshaw817
               </a>
             </div>
           </div>

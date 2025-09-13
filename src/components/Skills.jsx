@@ -27,9 +27,13 @@ const skillsData = [
       { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
       { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
       { name: 'Bash', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg' },
+      { name: 'npm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
       { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
       { name: 'Notion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg' },
-    ],
+      { name: 'Vercel', icon: 'https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/vercel.png' },
+      { name: 'Netlify', icon: 'https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/netlify.png' },
+      { name: 'Render', icon: '/public/render.png' }
+      ],
   },
   {
     category: 'Databases',

@@ -40,7 +40,7 @@ const Footer = () => {
               <FaFacebook />
             </a>
             <a
-              href="./Error404.html"
+              href="https://twitter.com/amanshaw817"
               className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
             >
               <FaTwitter />
