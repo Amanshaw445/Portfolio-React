@@ -11,6 +11,7 @@ import SectionToggle from './components/SectionToggle'
 import CursorLight from './components/CursorLight'
 import GitHubStats from './components/GitHubStats'
 import ThemeToggle from './components/ThemeToggle';
+import Cursor from './components/cursor';
 
 
 function App() {
@@ -54,7 +55,7 @@ const toggleBot = () => {
       <Contact />
       <Footer />
       <SectionToggle onScrollUp={scrollToPrevSection} onScrollDown={scrollToNextSection} />
-      <CursorLight />
+      <Cursor />
     </div>
   )
 }
