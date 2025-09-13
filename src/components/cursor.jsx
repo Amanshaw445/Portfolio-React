@@ -1,10 +1,24 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function SnakeCursor() {
   const text = "✨ Welcome to my Portfolio ✨";
   const charsRef = useRef([]);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth > 1024);
+    };
+
+    checkDesktop();
+    window.addEventListener("resize", checkDesktop);
+
+    return () => window.removeEventListener("resize", checkDesktop);
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) return;
+
     const positions = Array(text.length).fill({ x: 0, y: 0 });
     let mouse = { x: 0, y: 0 };
     let hasMoved = false;
@@ -43,7 +57,9 @@ export default function SnakeCursor() {
     animate();
 
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [text.length]);
+  }, [text.length, isDesktop]);
+
+  if (!isDesktop) return null;
 
   return (
     <>
