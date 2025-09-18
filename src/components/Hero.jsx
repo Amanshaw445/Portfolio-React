@@ -62,7 +62,7 @@ const Hero = () => {
     </div>
 
     {/* Mobile-only Resume Button */}
-    <div className="mt-6 block md:hidden">
+    <div className="mt-6 block custom800:hidden">
       <button
         onClick={() => setShowResume(true)}
         className="bg-gradient-to-r from-green-400 to-blue-500 

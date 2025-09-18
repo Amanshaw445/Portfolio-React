@@ -57,10 +57,10 @@ const Navbar = () => {
         rounded-2xl shadow-lg scroll-smooth
       ">
 
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-4 relative">
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-0 relative">
 
           {/* Left: Logo and Name */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-0">
             <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-green-400 to-blue-500">
               <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
             </div>
@@ -93,12 +93,13 @@ const Navbar = () => {
           </div>
 
           {/* Right: Resume Button */}
-          <button
-            onClick={() => setShowResume(true)}
-            className="hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110"
-          >
-            Resume
-          </button>
+<button
+  onClick={() => setShowResume(true)}
+  className="hidden custom800:inline bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110"
+>
+  Resume
+</button>
+
 
         </div>
       </nav>

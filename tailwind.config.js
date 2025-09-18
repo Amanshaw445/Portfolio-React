@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'custom800': '800px',  // <-- Add this line
+      },
       keyframes: {
         gradientShift: {
           '0%, 100%': { backgroundPosition: '0% 50%' },
