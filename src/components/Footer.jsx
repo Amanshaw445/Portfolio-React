@@ -12,13 +12,15 @@ const Footer = () => {
     >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row md:space-x-12 items-center mb-4">
-          <div className="flex-1 mb-4 md:mb-0 text-center md:text-left">
+          <div className="flex items-center gap-3 mb-4 md:mb-0 text-center md:text-left">
+            {/* Logo with Gradient Border */}
+            <div
+              className="w-16 h-16 rounded-full overflow-hidden"
+            >
+              <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
+            </div>
+            {/* Name Text */}
             <h3 className="text-2xl mb-2">Aman Shaw</h3>
-            {/* <p className="text-gray-600 dark:text-gray-400">
-              Passionate Computer Science student and Full-Stack Developer with
-              experience in building modern web apps using Java, React, Node.js,
-              MySQL, and more.
-            </p> */}
           </div>
           <div className="flex-1 w-full"></div>
         </div>

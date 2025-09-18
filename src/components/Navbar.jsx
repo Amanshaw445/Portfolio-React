@@ -48,20 +48,25 @@ const Navbar = () => {
 
   return (
     <>
-<nav className="
-  fixed top-4 left-1/2 transform -translate-x-1/2 z-50 
-  w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] 
-  bg-white/30 text-black 
-  dark:bg-black/30 dark:text-white 
-  backdrop-blur-md px-4 py-3 
-  rounded-2xl shadow-lg scroll-smooth
-">
+      <nav className="
+        fixed top-4 left-1/2 transform -translate-x-1/2 z-50 
+        w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] 
+        bg-white/30 text-black 
+        dark:bg-black/30 dark:text-white 
+        backdrop-blur-md px-4 py-3 
+        rounded-2xl shadow-lg scroll-smooth
+      ">
 
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-4 relative">
 
-          {/* Left: Name */}
-          <div className="text-2xl font-bold hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-            Aman Shaw
+          {/* Left: Logo and Name */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-green-400 to-blue-500">
+              <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
+            </div>
+            <div className="text-2xl font-bold hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+              Aman Shaw
+            </div>
           </div>
 
           {/* Center: Nav Links */}
@@ -88,13 +93,12 @@ const Navbar = () => {
           </div>
 
           {/* Right: Resume Button */}
-         {/* Resume Button (hidden on mobile) */}
-<button
-  onClick={() => setShowResume(true)}
-  className="hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110"
->
-  Resume
-</button>
+          <button
+            onClick={() => setShowResume(true)}
+            className="hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold px-5 py-2 rounded-full transition-transform hover:scale-105 hover:brightness-110"
+          >
+            Resume
+          </button>
 
         </div>
       </nav>
