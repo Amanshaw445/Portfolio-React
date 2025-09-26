@@ -13,7 +13,7 @@ import SectionToggle from "./components/SectionToggle";
 import CursorLight from "./components/CursorLight";
 import GitHubStats from "./components/GitHubStats";
 import ThemeToggle from "./components/ThemeToggle";
-import Cursor from "./components/cursor";
+// import Cursor from "./components/cursor";
 import LoadingScreen from "./LoadingScreen";
 
 export default function App() {
@@ -73,7 +73,7 @@ export default function App() {
         onScrollDown={scrollToNextSection}
       />
 
-      <Cursor />
+      {/* <Cursor /> */}
     </div>
   );
 }
