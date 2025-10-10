@@ -32,7 +32,7 @@ Portfolio-React/
 ---
 
 ## 🌐 Live Demo
-[amanshaw.vercel.app](https://amanshaw.vercel.app)
+[amanshaw.live](https://amanshaw.live)
 
 ---
 
