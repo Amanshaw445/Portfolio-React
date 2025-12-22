@@ -20,7 +20,14 @@ const projects = [
     live: "https://amanshaw.vercel.app",
   },
   {
-    id: 2,
+  id: 2,
+  name: "LLM Code Summarizer",
+  technologies: "html, CSS, JavaScript, Python, Torch, Hugging Face, Flask",
+  image: "/llm-summarizer.png", 
+  github: "https://github.com/Amanshaw445/readmeGeneratorLLM",
+},
+  {
+    id: 3,
     name: "Weather App",
     technologies: "HTML, CSS, JavaScript",
     image: "/weatherApp.png",
@@ -28,7 +35,7 @@ const projects = [
     live: "https://climetx.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     name: "Globel_Impact",
     technologies: "HTML, CSS, JavaScript",
     image: "/newsApp.png",
@@ -36,7 +43,7 @@ const projects = [
     live: "https://globelimpact.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "SlidePuzzelGame",
     technologies: "HTML, CSS, JavaScript",
     image: "/puzzelGame.png",
@@ -44,7 +51,7 @@ const projects = [
     live: "https://slidepuzzel15.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Bubble Game",
     technologies: "HTML, CSS, JavaScript",
     image: "/bubbleGame.png",
@@ -52,7 +59,7 @@ const projects = [
     live: "https://mybubblegame455.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Real Time Feedback",
     technologies: "HTML, CSS, js",
     image: "/feedbackApp.png",
@@ -60,7 +67,7 @@ const projects = [
     live: "https://realtimereview.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     name: "my repair",
     technologies: "HTML, CSS, js",
     image: "/repairApp.png",
@@ -68,7 +75,7 @@ const projects = [
     live: "https://repairforme.netlify.app/",
   },
   {
-    id: 8,
+    id: 9,
     name: "fabfit",
     technologies: "HTML, CSS",
     image: "/fabfitApp.png",
@@ -76,7 +83,7 @@ const projects = [
     live: "https://fabfitshopping.netlify.app/",
   },
   {
-    id: 9,
+    id: 10,
     name: "Upcoming🧑‍💻",
     technologies: "🌐",
     image: commingsoon,
