@@ -33,7 +33,7 @@ const skillsData = [
       { name: 'Notion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg' },
       { name: 'Vercel', icon: 'https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/vercel.png' },
       { name: 'Netlify', icon: 'https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/netlify.png' },
-      { name: 'Render', icon: '/public/render.png' }
+      { name: 'Render', icon: '/render.png' }
       ],
   },
   {
