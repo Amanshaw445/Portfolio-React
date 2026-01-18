@@ -67,10 +67,10 @@ const Contact = () => {
             <div className="mb-4 mt-8">
               <FaEnvelope className="inline-block text-red-500 mr-2" />
               <a
-                href="mailto:amanshaw871@gmail.com"
+                href="mailto:amanshaw817@gmail.com"
                 className="hover:underline"
               >
-                amanshaw871@gmail.com
+                amanshaw817@gmail.com
               </a>
             </div>
 
