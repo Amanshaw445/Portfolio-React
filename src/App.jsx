@@ -15,6 +15,7 @@ import GitHubStats from "./components/GitHubStats";
 import ThemeToggle from "./components/ThemeToggle";
 // import Cursor from "./components/cursor";
 import LoadingScreen from "./LoadingScreen";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -67,7 +68,7 @@ export default function App() {
       <GitHubStats />
       <Contact />
       <Footer />
-
+      <Analytics />
       <SectionToggle
         onScrollUp={scrollToPrevSection}
         onScrollDown={scrollToNextSection}
