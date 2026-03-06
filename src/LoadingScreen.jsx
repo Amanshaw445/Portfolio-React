@@ -11,7 +11,7 @@ export default function LoadingScreen() {
         alt="Logo"
         className="w-52 h-52 animate-pulse"
       />
-      <span className="mt-0 text-lg font-medium animate-pulse">Loading...</span>
+      <h1 className="mt-0 text-lg font-medium animate-pulse">Aman Shaw...</h1>
     </div>
   );
 }

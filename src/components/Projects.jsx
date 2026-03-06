@@ -101,7 +101,7 @@ const Projects = () => {
       id="project"
     >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+        <h1 className="text-2xl font-bold text-center mb-12">My Projects</h1>
 
         {/* Navigation Buttons */}
         <div className="absolute top-1/2 -translate-y-1/2 z-10 left-8">
