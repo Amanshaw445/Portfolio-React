@@ -2,34 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Aman Shaw | Frontend Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Aman Shaw, a Frontend Developer and CSE student at Asansol Engineering College specializing in React and modern web technologies.">
     <link rel="icon" type="image/png" href="/AKlogo.png" />
-    <title>Aman-Protfolio</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aman Shaw",
+      "url": "https://amanshaw.live",
+      "jobTitle": "Frontend Developer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Asansol Engineering College"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/amanshaw445", 
+        "https://github.com/Amanshaw445"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      const originalTitle = "Aman-Protfolio";
+
+    <!-- <script>
+      // SEO Friendly Title Switcher
+      const originalTitle = "Aman Shaw | Frontend Developer";
       const emojis = ["🥺 Come back!", "😾 Come back na!", "😤😤 uffff"];
       let i = 0;
       let interval;
 
-document.addEventListener("visibilitychange", () => {
-  if (document.hidden) {
-    interval = setInterval(() => {
-      document.title = emojis[i % emojis.length];
-      i++;
-    }, 1000); // change every 1 second
-  } else {
-    clearInterval(interval);
-    document.title = originalTitle;
-  }
-});
-</script>
-<script type="module" src="/src/main.jsx"></script>
-<script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
-<script src="https://files.bpcontent.cloud/2025/08/01/09/20250801092532-6C80LJTE.js" defer></script>
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          interval = setInterval(() => {
+            document.title = emojis[i % emojis.length];
+            i++;
+          }, 1000);
+        } else {
+          clearInterval(interval);
+          document.title = originalTitle;
+        }
+      });
+    </script> -->
+
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2025/08/01/09/20250801092532-6C80LJTE.js" defer></script>
   </body>
 </html>
