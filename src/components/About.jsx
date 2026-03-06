@@ -8,7 +8,7 @@ const About = () => {
       className="text-black dark:text-white py-20"
     >
       <div className="container mx-auto px-8 md:px-16 lg:px-24 z-20">
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
+        <h1 className="text-2xl font-bold text-center mb-12">About Me</h1>
 
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img

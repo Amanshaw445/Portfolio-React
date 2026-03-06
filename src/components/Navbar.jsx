@@ -65,7 +65,7 @@ const Navbar = () => {
               <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div className="text-2xl font-bold hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-              Aman Shaw
+              <h1>Aman Shaw</h1>
             </div>
           </div>
 

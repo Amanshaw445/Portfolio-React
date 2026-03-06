@@ -17,7 +17,7 @@ const projects = [
     technologies: "React, Tailwind CSS, JavaScript",
     image: "/portfolio.png",
     github: "https://github.com/Amanshaw445/Portfolio-React",
-    live: "https://amanshaw.vercel.app",
+    live: "https://amanshaw.live",
   },
   {
   id: 2,

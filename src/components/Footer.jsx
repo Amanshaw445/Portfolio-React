@@ -20,7 +20,7 @@ const Footer = () => {
               <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
             </div>
             {/* Name Text */}
-            <h3 className="text-2xl mb-2">Aman Shaw</h3>
+            <h1 className="text-2xl mb-2">Aman Shaw</h1>
           </div>
           <div className="flex-1 w-full"></div>
         </div>

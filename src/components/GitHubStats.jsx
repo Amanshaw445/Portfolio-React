@@ -33,7 +33,7 @@ const GitHubStats = () => {
 
   return (
     <aside className="w-full md:w-1/2 p-6 rounded-2xl bg-white bg-opacity-70 text-gray-900 dark:bg-[#2c2c3c] dark:bg-opacity-70 dark:text-white transition-colors">
-      <h2 className="text-3xl font-bold text-left mb-8">🚀 GitHub Stats</h2>
+      <h1 className="text-2xl font-bold text-left mb-8">🚀 GitHub Stats</h1>
 
       {/* Responsive 2x2 Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
