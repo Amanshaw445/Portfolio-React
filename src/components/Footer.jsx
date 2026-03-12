@@ -11,49 +11,66 @@ const Footer = () => {
       "
     >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <div className="flex flex-col md:flex-row md:space-x-12 items-center mb-4">
-          <div className="flex items-center gap-3 mb-4 md:mb-0 text-center md:text-left">
-            {/* Logo with Gradient Border */}
-            <div
-              className="w-16 h-16 rounded-full overflow-hidden"
-            >
-              <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
+        
+        {/* Top Row: Info and Tagline */}
+        <div className="flex flex-col md:flex-row md:justify-between items-center mb-6">
+          
+          {/* Left: Logo + Name + Role */}
+          <div className="flex items-center gap-4 mb-4 md:mb-0">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-500">
+              <img 
+                src="/AKlogo.png" 
+                alt="Aman Shaw" 
+                className="w-full h-full object-cover" 
+              />
             </div>
-            {/* Name Text */}
-            <h1 className="text-2xl mb-2">Aman Shaw</h1>
+            <div className="text-center md:text-left">
+              <h1 className="text-xl font-bold leading-tight">Aman Shaw</h1>
+              <p className="text-gray-500 dark:text-gray-400 text-xs">
+                CSE Student & Frontend Developer
+              </p>
+            </div>
           </div>
-          <div className="flex-1 w-full"></div>
+
+          {/* Right: Tagline */}
+          <div className="text-center md:text-right">
+            <p className="italic text-gray-500 dark:text-gray-400 text-xs">
+              Building digital experiences from Asansol, West Bengal.
+            </p>
+          </div>
         </div>
 
+        {/* Divider + Bottom Row: Copyright & Socials */}
         <div
-          className="border-t border-gray-300 dark:border-gray-600 pt-4 
-          flex flex-col md:flex-row justify-between items-center
-        "
+          className="border-t border-gray-300 dark:border-gray-600 pt-6 
+          flex flex-col md:flex-row justify-between items-center gap-4"
         >
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-sm">
             &copy; {new Date().getFullYear()} Aman Shaw. All rights reserved.
           </p>
 
-          <div className="flex space-x-4 my-4 md:my-0">
+          <div className="flex space-x-5">
             <a
               href="./Error404.html"
-              className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+              className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
             >
-              <FaFacebook />
+              <FaFacebook size={20} />
             </a>
             <a
               href="https://twitter.com/amanshaw817"
-              className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-300 transition-colors"
             >
-              <FaTwitter />
+              <FaTwitter size={20} />
             </a>
             <a
               href="https://linkedin.com/in/amanshaw445"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+              className="text-gray-500 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500 transition-colors"
             >
-              <FaLinkedin />
+              <FaLinkedin size={20} />
             </a>
             <a
               href="https://github.com/Amanshaw445"
@@ -61,7 +78,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
             >
-              <FaGithub />
+              <FaGithub size={20} />
             </a>
           </div>
         </div>

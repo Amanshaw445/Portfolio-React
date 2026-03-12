@@ -1,0 +1,69 @@
+[33mbc43fb4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m .
+[33m6498a08[m[33m ([m[1;31morigin/main[m[33m)[m fix: downgrade vite to stable 4.5.3
+[33me2d2e77[m fix: add rollup linux binary as optional dependency
+[33m13b68c5[m fix: regenerate package-lock.json for rollup native module
+[33m3ba80a1[m seo improved
+[33m2c0bb13[m fix: install vercel analytics and remove conflict markers
+[33m140266b[m Successfully resolved all merge conflicts and updated SEO footer
+[33mae94aed[m Save local changes before merging
+[33m213a7e8[m title updated
+[33me9b0b7f[m 5
+[33mc0cc41e[m loader removed for better seo
+[33m7e4f14c[m seo 4 done
+[33mf7971f1[m started vercel analitics
+[33m6d3f137[m stage 2
+[33m63f35a9[m seo stage 2
+[33m1ebfad2[m seo stage one
+[33m0628c1b[m corrected email address in Contact component
+[33m9973424[m render image error fixed, uploaded current resume
+[33m4d7eee6[m Add files via upload
+[33mabe1d7e[m updated
+[33m8a59cb5[m Add files via upload
+[33m9c261da[m Update Projects.jsx
+[33md58da08[m Update README.md
+[33m6fda068[m Update App.jsx
+[33m224aeb2[m Update index.html
+[33ma51b69c[m Moved AKlogo.png to public folder
+[33mb878fba[m Rename public/IMG_20250919_154213.png to AKlogo.png
+[33me9a7eb8[m Add files via upload
+[33m19b3e5e[m Rename AKlogo.png to AK2logo.png
+[33m7f66d37[m Fixed navbar bugs
+[33mfed04e4[m Updated components, config, and added new assets
+[33m7ce7213[m cursor bug fixe
+[33m24f4d53[m cursor updated
+[33m176855f[m skills updated
+[33m020acf8[m profile updated
+[33mc860d4d[m error fixed
+[33ma406c34[m updated icon
+[33m53e6d5c[m dark mode added
+[33m5c9f3e3[m bugs fixed in resumemodel
+[33m1334814[m title updated
+[33m8cf7da6[m resume updated
+[33m21fe96f[m updated skills
+[33macb0f61[m added projects
+[33m3be0718[m projects added
+[33ma16425f[m added readme and updated resume
+[33m70569fd[m Updated portfolio changes
+[33m33682d3[m updated github stats
+[33m7e05ba0[m Update CursorLight.jsx
+[33mdae936d[m Merge pull request #9 from Amanshaw445/feature-update
+[33m6c7f25b[m[33m ([m[1;31morigin/feature-update[m[33m)[m Merge pull request #8 from Amanshaw445/main
+[33md965ba4[m githun stats updated
+[33m6fed0ca[m Update README.md
+[33mb82f8e2[m Merge pull request #7 from Amanshaw445/feature-update
+[33mb493c2c[m readme updated
+[33mc2b3054[m Merge pull request #6 from Amanshaw445/feature-update
+[33m0de4482[m cursor animation added
+[33mc706619[m Merge pull request #5 from Amanshaw445/feature-update
+[33me547733[m chatbot and background color updated
+[33m25a59ba[m chatbot added
+[33mf6c38e5[m Merge pull request #4 from Amanshaw445/feature-update
+[33m89b93e9[m form working and project made like corousal
+[33m95360ef[m Merge pull request #3 from Amanshaw445/feature-update
+[33meb3b6e7[m <div className="text-2xl font-bold hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">   Aman Shaw </div>
+[33mceb6298[m Merge pull request #2 from Amanshaw445/feature-update
+[33m3de014f[m added a floating contact button and resume box
+[33mf149964[m Merge pull request #1 from Amanshaw445/feature-update
+[33md24e40d[m bugs fixed
+[33m68da5dc[m Update README.md
+[33mca1988d[m First commit

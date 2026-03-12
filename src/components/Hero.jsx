@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import HeroImage from '../assets/hero-image.jpg';
+import HeroImage from '../assets/hero-image.jpeg';
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import ResumeModal from './ResumeModal';
 
