@@ -11,60 +11,78 @@ const Footer = () => {
       "
     >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
+        
+        {/* Top Section */}
         <div className="flex flex-col md:flex-row md:space-x-12 items-center mb-4">
           <div className="flex items-center gap-3 mb-4 md:mb-0 text-center md:text-left">
-            {/* Logo with Gradient Border */}
-            <div
-              className="w-16 h-16 rounded-full overflow-hidden"
-            >
+            
+            {/* Logo */}
+            <div className="w-16 h-16 rounded-full overflow-hidden">
               <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
             </div>
-            {/* Name Text */}
+
+            {/* Name */}
             <h1 className="text-2xl mb-2">Aman Shaw</h1>
           </div>
+
           <div className="flex-1 w-full"></div>
         </div>
 
+        {/* Bottom Section */}
         <div
-          className="border-t border-gray-300 dark:border-gray-600 pt-4 
-          flex flex-col md:flex-row justify-between items-center
-        "
+          className="
+            border-t border-gray-300 dark:border-gray-600 pt-4 
+            flex flex-col md:flex-row justify-between items-center
+          "
         >
+          {/* Copyright */}
           <p className="text-gray-600 dark:text-gray-400">
             &copy; {new Date().getFullYear()} Aman Shaw. All rights reserved.
           </p>
 
-          <div className="flex space-x-4 my-4 md:my-0">
-            <a
-              href="./Error404.html"
-              className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
-            >
+          {/* Social Icons */}
+          <div className="flex space-x-5 my-4 md:my-0 text-lg">
+            
+            {/* Instagram */}
             <a
               href="https://instagram.com/aman_shaw445"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+              className="text-gray-500 hover:text-pink-500 dark:text-gray-400 transition-colors"
             >
               <FaInstagram />
             </a>
+
+            {/* Twitter */}
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-blue-400 dark:text-gray-400 transition-colors"
+            >
               <FaTwitter />
             </a>
+
+            {/* LinkedIn */}
             <a
               href="https://linkedin.com/in/amanshaw445"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+              className="text-gray-500 hover:text-blue-600 dark:text-gray-400 transition-colors"
             >
               <FaLinkedin />
             </a>
+
+            {/* GitHub */}
             <a
               href="https://github.com/Amanshaw445"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+              className="text-gray-500 hover:text-black dark:hover:text-white dark:text-gray-400 transition-colors"
             >
               <FaGithub />
             </a>
+
           </div>
         </div>
       </div>
