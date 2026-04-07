@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -39,12 +39,14 @@ const Footer = () => {
               href="./Error404.html"
               className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
             >
-              <FaFacebook />
-            </a>
             <a
-              href="https://twitter.com/amanshaw817"
+              href="https://instagram.com/aman_shaw445"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
             >
+              <FaInstagram />
+            </a>
               <FaTwitter />
             </a>
             <a
