@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const CodingStats = () => {
   // Separate usernames
-  const githubUsername = "amanshaw445";
+  const githubUsername = "Amanshaw445";
   const leetcodeUsername = "amanshaw_445";
 
   const [avatarUrl, setAvatarUrl] = useState("");
