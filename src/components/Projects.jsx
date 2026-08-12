@@ -26,12 +26,12 @@ const projects = [
   image: "/llm-summarizer.png", 
   github: "https://github.com/Amanshaw445/readmeGeneratorLLM",
 },
-  {
+{
   id: 3,
-  name: "LLM Code Summarizer",
-  technologies: "html, CSS, JavaScript, Python, Torch, Hugging Face, Flask",
-  image: "/llm-summarizer.png", 
-  github: "https://github.com/Amanshaw445/readmeGeneratorLLM",
+  name: "AEC Marketplace",
+  technologies: "React, JavaScript, HTML, CSS, Node.js, MySQL",
+  image: "/aec-marketplace.png",
+  github: "https://github.com/Amanshaw445/AEC-Marketplace",
 },
   {
     id: 4,
@@ -81,16 +81,16 @@ const projects = [
     github: "https://github.com/Amanshaw445/electronicsrepair",
     live: "https://repairforme.netlify.app/",
   },
+  // {
+  //   id: 9,
+  //   name: "fabfit",
+  //   technologies: "HTML, CSS",
+  //   image: "/fabfitApp.png",
+  //   github: "https://github.com/Amanshaw445/online_shopping_website.github.io",
+  //   live: "https://fabfitshopping.netlify.app/",
+  // },
   {
     id: 9,
-    name: "fabfit",
-    technologies: "HTML, CSS",
-    image: "/fabfitApp.png",
-    github: "https://github.com/Amanshaw445/online_shopping_website.github.io",
-    live: "https://fabfitshopping.netlify.app/",
-  },
-  {
-    id: 10,
     name: "Upcoming🧑‍💻",
     technologies: "🌐",
     image: commingsoon,

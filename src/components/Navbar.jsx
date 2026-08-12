@@ -3,7 +3,7 @@ import ResumeModal from './ResumeModal';
 
 const navLinks = ["home", "about", "skills", "project", "contact"];
 
-const Navbar = () => {
+const Navbar = ({ theme }) => {
   const [showResume, setShowResume] = useState(false);
   const [active, setActive] = useState("home");
   const underlineRef = useRef(null);
@@ -62,7 +62,7 @@ const Navbar = () => {
           {/* Left: Logo and Name */}
           <div className="flex items-center gap-0">
             <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-green-400 to-blue-500">
-              <img src="/AKlogo.png" alt="Logo" className="w-full h-full object-cover" />
+              <img src={theme === "dark" ? "/AKlogo.png" : "/darkLogo.png"} alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div className="text-2xl font-bold hidden md:inline bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
               <h1>Aman Shaw</h1>
