@@ -32,6 +32,7 @@ const projects = [
   technologies: "React, JavaScript, HTML, CSS, Node.js, MySQL",
   image: "/aec-marketplace.png",
   github: "https://github.com/Amanshaw445/AEC-Marketplace",
+  live: "https://aecmarketplace.shop",
 },
   {
     id: 4,
